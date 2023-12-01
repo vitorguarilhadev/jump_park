@@ -18,9 +18,9 @@ class ServiceOrderController extends Controller
         $this->serviceOrderRepository = $serviceOrderRepository;
     }
 
-    public function listarServiceOrder()
+    public function listarServiceOrder(Request $request)
     {
-        return $this->serviceOrderRepository->listarServiceOrder();
+        return $this->serviceOrderRepository->listarServiceOrder($request);
     }
 
     public function criarServiceOrder(ServiceOrderRequest $request)

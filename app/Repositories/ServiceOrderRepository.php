@@ -14,10 +14,18 @@ class ServiceOrderRepository{
     {
     }
 
-    public function listarServiceOrder()
+    public function listarServiceOrder(Request $request)
     {
-        $serviceOrders = ServiceOrder::with('user:id,name')->paginate(5);
-
+        $partialVehiclePlate = $request->query('vehicle_plate');
+    
+        $query = ServiceOrder::with('user:id,name');
+    
+        if ($partialVehiclePlate !== null) {
+            $query->where('vehiclePlate', 'LIKE', '%' . $partialVehiclePlate . '%');
+        }
+    
+        $serviceOrders = $query->paginate(5);
+    
         return response()->json([
             'data' => $serviceOrders->items(),
             'current_page' => $serviceOrders->currentPage(),
