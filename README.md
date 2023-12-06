@@ -46,6 +46,10 @@ O projeto conta com os seguintes endpoints:
       <br>       } <br>
 *   ##### EXCLUIR: <kbd>DELETE api/service_order/{service_order_id}/</kbd> <br>
     - Remoção lógica da ordem de serviço. <br>
+
+*   ##### DOCUMENTAÇÃO VIA SWAGGER:
+    - Através da seguinte url é possível rodas os endpoints e ver toda a documentação da API. <br>
+    <kbd>https://app-jump-park-bb410bd77458.herokuapp.com/api-documentation/</kbd>
     
 ### ⌨️ Executando o Projeto:
 
