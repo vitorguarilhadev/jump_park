@@ -1,0 +1,286 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Laravel Swagger Documentation - Projeto Jump Park",
+        "contact": {
+            "email": "vitorguarilha@poli.ufrj.br"
+        },
+        "version": "1.5.0"
+    },
+    "paths": {
+        "/api/login": {
+            "post": {
+                "tags": [
+                    "LOGIN - JWT Token Authentication"
+                ],
+                "summary": "Obter um token de autenticação de usuário",
+                "description": "Esse endpoint retorna um novo token para ser usado nas rotas protegidas",
+                "operationId": "7d45088a3658263053148a3c9ee63c80",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "email",
+                                    "password"
+                                ],
+                                "properties": {
+                                    "email": {
+                                        "type": "string",
+                                        "example": "vitorguarilha@poli.ufrj.br"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "example": "12345678"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Token gerado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "plainTextToken": {
+                                            "type": "string",
+                                            "example": "2|MZEBxLy1zulPtND6brlf8GOPy57Q4DwYunlibXGj"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Usuário e/ou senha incorreta",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The provided credentials are incorrect."
+                                        },
+                                        "errors": {
+                                            "type": "string",
+                                            "example": "..."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/service_order": {
+            "get": {
+                "tags": [
+                    "LISTAR"
+                ],
+                "summary": "Listar ordens de serviço",
+                "description": "Esse endpoint retorna uma lista das ordens de serviço cadastradas",
+                "operationId": "a886640214be3229ae917a8937d4c55e",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "Número da página",
+                        "required": false,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "vehiclePlate",
+                        "in": "query",
+                        "description": "Placa do veículo",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Operação concluída com sucesso"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerToken": []
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "CRIAR"
+                ],
+                "summary": "Criar nova ordem de serviço",
+                "description": "Esse endpoint cria uma nova ordem de serviço",
+                "operationId": "1144fd797e53d31dc98a99a7ffdf5ec1",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "vehiclePlate",
+                                    "entryDateTime",
+                                    "exitDateTime",
+                                    "priceType",
+                                    "price",
+                                    "userId"
+                                ],
+                                "properties": {
+                                    "vehiclePlate": {
+                                        "type": "char",
+                                        "example": "VVV7777"
+                                    },
+                                    "entryDateTime": {
+                                        "type": "dateTime",
+                                        "example": "0001-01-01 00:00:00"
+                                    },
+                                    "exitDateTime": {
+                                        "type": "string",
+                                        "example": "0001-01-01 00:00:00"
+                                    },
+                                    "priceType": {
+                                        "type": "string",
+                                        "example": "NOITE"
+                                    },
+                                    "price": {
+                                        "type": "decimal",
+                                        "example": "40"
+                                    },
+                                    "userId": {
+                                        "type": "unsignedBigInteger",
+                                        "example": "1"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ordem de serviço criada com sucesso"
+                    },
+                    "422": {
+                        "description": "Erro de validação"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerToken": []
+                    }
+                ]
+            }
+        },
+        "/api/service_order/{service_order_id}": {
+            "put": {
+                "tags": [
+                    "EDITAR"
+                ],
+                "summary": "Editar ordem de serviço",
+                "description": "Esse endpoint edita uma ordem de serviço",
+                "operationId": "62bff4dabc1e036dd28860470b8d289c",
+                "parameters": [
+                    {
+                        "name": "service_order_id",
+                        "in": "path",
+                        "description": "ID da ordem de serviço a ser editada",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "vehiclePlate": {
+                                        "type": "char",
+                                        "example": "VVV7777"
+                                    },
+                                    "price": {
+                                        "type": "decimal",
+                                        "example": "40"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ordem de serviço editada com sucesso"
+                    },
+                    "422": {
+                        "description": "Erro de validação"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerToken": []
+                    }
+                ]
+            },
+            "delete": {
+                "tags": [
+                    "DELETAR"
+                ],
+                "summary": "Deletar ordem de serviço",
+                "description": "Esse endpoint deleta uma ordem de serviço",
+                "operationId": "62bff4dabc1e036dd28860470b8d289c",
+                "parameters": [
+                    {
+                        "name": "service_order_id",
+                        "in": "path",
+                        "description": "ID da ordem de serviço a ser deletada",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ordem de serviço deletada com sucesso"
+                    },
+                    "422": {
+                        "description": "Erro de validação"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerToken": []
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerToken": {
+                "type": "http",
+                "description": "Acess token obtido na autenticação",
+                "name": "Authorization",
+                "in": "header",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
+            }
+        }
+    }
+}
