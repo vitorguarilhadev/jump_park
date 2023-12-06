@@ -8,6 +8,9 @@ O Sistema de Gerenciamento de Estacionamento é uma aplicação web desenvolvida
 *    Autenticação Segura: O projeto utiliza o JWT Token para garantir a autenticação segura dos usuários. Os usuários podem fazer login e acessar as funcionalidades de gerenciamento de serviços após a autenticação.
 *    Hospedagem online: O projeto utiliza o sistema de hospedagem online Heroku.
 
+### ⚙ URL Temporária:
+*    URL: https://app-jump-park-bb410bd77458.herokuapp.com/
+
 ### 📜 Documentação API's: 
 O projeto conta com os seguintes endpoints:
 *   ##### AUTENTICAÇÃO: <kbd>POST api/login</kbd> <br>
