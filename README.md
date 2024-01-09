@@ -1,4 +1,4 @@
-# Teste Técnico – Projeto de Estacionamento - Jump Park
+# Projeto de Estacionamento - Jump Park
 
 ### 📝 Descrição: 
 O Sistema de Gerenciamento de Estacionamento é uma aplicação web desenvolvida em Laravel, que oferece uma solução abrangente para a gestão de serviços em um estacionamento.
