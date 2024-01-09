@@ -68,16 +68,4 @@ Para utilizar esse Postman Collection, considere as seguintes opções:
 Concluído.
 
 ### 🐛 Issues:
-* Email: vitorguarilha@poli.ufrj.br   )
-
-### 🔧 Tecnologias utilizadas: 
-*   PHP 7.4.27
-*   Laravel Framework 8.83.27
-*   MySql
-*   Heroku
-
-### 🎯 Status do projeto:
-Concluído.
-
-### 🐛 Issues:
-* Email: vitorguarilha@poli.ufrj.br   
+* Email: vitorguarilha@poli.ufrj.br
