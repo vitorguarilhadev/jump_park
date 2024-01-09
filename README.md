@@ -55,12 +55,9 @@ O projeto conta com os seguintes endpoints:
 
 Através do Postman, importar a collection, arquivo presente na pasta raiz, e rodar os endpoints que já estão configurados. É necessário gerar um um TOKEN através da rota de login e utilizá-lo nas demais rotas através de Authorization -> Bearer Token.
 
-Para utilizar esse Postman Collection, considere qualquer uma das opções abaixo:
+Para utilizar esse Postman Collection, considere a opção abaixo:
 
-* Acesse o arquivo em formato JSON que está salvo nesse repositório [Jump Park.postman_collection.json](Jump%20Park.postman_collection.json)
-* Clique no botão abaixo e abra a configuração direto no Postman instalado em seu computador
-
-[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/6161625-a87a3507-cd1e-427f-ab92-3bdac5c068b2)
+* Faça o download do arquivo em formato JSON que está salvo nesse repositório [Jump Park.postman_collection.json](Jump%20Park.postman_collection.json) e importe em seu app postman.
 
 ### 📝 Descrição: 
 O Sistema de Gerenciamento de Estacionamento é uma aplicação web desenvolvida em Laravel, que oferece uma solução abrangente para a gestão de serviços em um estacionamento.
