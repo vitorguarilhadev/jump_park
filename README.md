@@ -60,7 +60,7 @@ Para utilizar esse Postman Collection, considere qualquer uma das opções abaix
 * Acesse o arquivo em formato JSON que está salvo nesse repositório [Jump Park.postman_collection.json](Jump%20Park.postman_collection.json)
 * Clique no botão abaixo e abra a configuração direto no Postman instalado em seu computador
 
-[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/6161625-30eedcb4-4ef8-41d2-8b2f-cc3afca2e956)
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/6161625-a87a3507-cd1e-427f-ab92-3bdac5c068b2)
 
 ### 📝 Descrição: 
 O Sistema de Gerenciamento de Estacionamento é uma aplicação web desenvolvida em Laravel, que oferece uma solução abrangente para a gestão de serviços em um estacionamento.
