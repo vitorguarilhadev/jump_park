@@ -46,18 +46,17 @@ O projeto conta com os seguintes endpoints:
       <br>       } <br>
 *   ##### EXCLUIR: <kbd>DELETE api/service_order/{service_order_id}/</kbd> <br>
     - Remoção lógica da ordem de serviço. <br>
-
-*   ##### DOCUMENTAÇÃO VIA SWAGGER:
-    - Através da seguinte url é possível rodas os endpoints e ver toda a documentação da API. <br>
-    <kbd>https://app-jump-park-bb410bd77458.herokuapp.com/api-documentation/</kbd>
     
 ### ⌨️ Executando o Projeto:
 
 Através do Postman, importar a collection, arquivo presente na pasta raiz, e rodar os endpoints que já estão configurados. É necessário gerar um um TOKEN através da rota de login e utilizá-lo nas demais rotas através de Authorization -> Bearer Token.
 
-Para utilizar esse Postman Collection, considere a opção abaixo:
+Para utilizar esse Postman Collection, considere as seguintes opções:
 
 * Faça o download do arquivo em formato JSON que está salvo nesse repositório [Jump Park.postman_collection.json](Jump%20Park.postman_collection.json) e importe em seu app postman.
+
+* Através da seguinte url é possível rodas os endpoints e ver toda a documentação da API. <br>
+    <kbd>https://app-jump-park-bb410bd77458.herokuapp.com/api-documentation/</kbd>
 
 ### 📝 Descrição: 
 O Sistema de Gerenciamento de Estacionamento é uma aplicação web desenvolvida em Laravel, que oferece uma solução abrangente para a gestão de serviços em um estacionamento.
