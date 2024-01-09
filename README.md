@@ -62,6 +62,8 @@ Para utilizar esse Postman Collection, considere qualquer uma das opções abaix
 
 [![Run in Postman](https://run.pstmn.io/button.svg)]([https://app.getpostman.com/run-collection/27dc730daa9ea47cfa3e](https://www.postman.com/jump-park/workspace/jump-park/collection/6161625-c2b57cbd-0b47-46aa-a5ca-56c9c59088ab))
 
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">]([https://god.gw.postman.com/run-collection/:collection_id](https://www.postman.com/jump-park/workspace/jump-park/collection/6161625-c2b57cbd-0b47-46aa-a5ca-56c9c59088ab))
+
 ### 🔧 Tecnologias utilizadas: 
 *   PHP 7.4.27
 *   Laravel Framework 8.83.27
