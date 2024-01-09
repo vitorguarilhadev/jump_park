@@ -59,10 +59,6 @@ Para utilizar esse Postman Collection, considere qualquer uma das opções abaix
 
 * Acesse o arquivo em formato JSON que está salvo nesse repositório [Jump Park.postman_collection.json](Jump%20Park.postman_collection.json)
 * Clique no botão abaixo e abra a configuração direto no Postman instalado em seu computador
-
-[![Run in Postman](https://run.pstmn.io/button.svg)]([https://app.getpostman.com/run-collection/6161625-c2b57cbd-0b47-46aa-a5ca-56c9c59088ab
-](https://www.postman.com/jump-park/workspace/jump-park/collection/6161625-c2b57cbd-0b47-46aa-a5ca-56c9c59088ab))
-
 [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://god.gw.postman.com/run-collection/6161625-c2b57cbd-0b47-46aa-a5ca-56c9c59088ab)
 
 ### 🔧 Tecnologias utilizadas: 
